@@ -130,20 +130,20 @@ const RecordAttendance: React.FC<RecordAttendanceProps> = ({ eventId, attendance
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Student ID</TableCell>
-              <TableCell>Name</TableCell>
-              <TableCell>Department</TableCell>
-              <TableCell>Year</TableCell>
-              <TableCell>Status</TableCell>
+              <TableCell sx={{ fontWeight: "bold", fontSize: "16px" }}>Student ID</TableCell>
+              <TableCell sx={{ fontWeight: "bold", fontSize: "16px" }}>Name</TableCell>
+              <TableCell sx={{ fontWeight: "bold", fontSize: "16px" }}>Department</TableCell>
+              <TableCell sx={{ fontWeight: "bold", fontSize: "16px" }}>Year</TableCell>
+              <TableCell sx={{ fontWeight: "bold", fontSize: "16px" }}>Status</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {filteredData.map((student) => (
               <TableRow key={student.id}>
-                <TableCell>{student.studentId}</TableCell>
-                <TableCell>{student.name}</TableCell>
-                <TableCell>{student.department}</TableCell>
-                <TableCell>{student.year}</TableCell>
+                <TableCell sx={{ fontSize: "16px" }}>{student.studentId}</TableCell>
+                <TableCell sx={{ fontSize: "16px" }}>{student.name}</TableCell>
+                <TableCell sx={{ fontSize: "16px" }}>{student.department}</TableCell>
+                <TableCell sx={{ fontSize: "16px" }}>{student.year}</TableCell>
                 <TableCell>
                   <Checkbox
                     checked={student.status}

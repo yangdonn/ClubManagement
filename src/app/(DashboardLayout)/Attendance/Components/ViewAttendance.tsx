@@ -122,11 +122,11 @@ const ViewAttendance: React.FC<ViewAttendanceProps> = ({ eventId, attendanceData
           <TableBody>
             {filteredData.map((student) => (
               <TableRow key={student.id}>
-                <TableCell sx={{ fontSize: "14px" }}>{student.studentId}</TableCell>
-                <TableCell sx={{ fontSize: "14px" }}>{student.name}</TableCell>
-                <TableCell sx={{ fontSize: "14px" }}>{student.department}</TableCell>
-                <TableCell sx={{ fontSize: "14px" }}>{student.year}</TableCell>
-                <TableCell sx={{ fontSize: "14px" }}>{student.status ? "Present" : "Absent"}</TableCell>
+                <TableCell sx={{ fontSize: "16px" }}>{student.studentId}</TableCell>
+                <TableCell sx={{ fontSize: "16px" }}>{student.name}</TableCell>
+                <TableCell sx={{ fontSize: "16px" }}>{student.department}</TableCell>
+                <TableCell sx={{ fontSize: "16px" }}>{student.year}</TableCell>
+                <TableCell sx={{ fontSize: "16px" }}>{student.status ? "Present" : "Absent"}</TableCell>
               </TableRow>
             ))}
           </TableBody>
